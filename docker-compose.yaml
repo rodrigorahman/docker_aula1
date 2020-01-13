@@ -1,10 +1,10 @@
 version: '3'
 services:
   php-server:
-    build:
-      context: ./docker
-      dockerfile: Dockerfile
-    image: php-custom-server
+    # build:
+    #   context: ./docker
+    #   dockerfile: Dockerfile
+    image: rodrigorahman/php-com-mysql:1.0.0
     volumes:
       - ./projetoPHP:/var/www/html
     ports:
